@@ -7,15 +7,15 @@
   <link href="/styles.css" rel="stylesheet"/>
 </head>
 <body>
-  <main>
-    <img class="main-image" src="/image/mountains.jpg" alt="A view through mountain peaks">
+  <div class="main-img">
+    <img src="/image/mountains.jpg">
     <div class="logo-box">
-      <img class="logo-image" src="/image/odin-lined.png" alt="An outline of TOP logo">
-      <div class="image-credit">
+      <img class="logo-img" src="/image/odin-lined.png" alt="An outline of TOP logo">
+      <p class="image-credit">
         Photo by <a href="https://unsplash.com/@detait?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">detait</a> on <a href="https://unsplash.com/photos/a-view-of-a-mountain-with-a-valley-in-the-background-O9I5xlBMAwQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-      </div>
+      </p>
     </div>
-  </main>
+  </div>
 
 <div class="intro">
   <p>This is not a real online service! You know you need something
@@ -41,17 +41,21 @@
   <div>
     <label for="user_email">Email:</label>
   </div>
-  <input type="email" id="user_email" name="user_email">
+  <input type="email" id="user_email" placeholder="Ex. @gmail.com">
   <br>
+  <div>
+    <label for="phone">Phone:</label>
+  </div>
+  <input type="text" id="phone" placeholder="123-456-7890">
   <div>
     <label for="user_password">Password:</label>
   </div>
-  <input type="password" id="user_password" name="user_password" required>
+  <input type="password" id="user_password" placeholder="required" required>
   <br>
   <div>
     <label for="confirm_password">Confirm Password:</label>
   </div>
-  <input type="password" id="confirm_password" name="confirm_password" required>
+  <input type="password" id="confirm_password" placeholder="confirm" required>
 </form>
 <br>
   <button class="btn" type="submit">Create Account</button>
