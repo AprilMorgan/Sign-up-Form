@@ -5,58 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form</title>
   <link href="/styles.css" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="main-img">
-    <img src="/image/mountains.jpg">
-    <div class="logo-box">
-      <img class="logo-img" src="/image/odin-lined.png" alt="An outline of TOP logo">
-      <p class="image-credit">
-        Photo by <a href="https://unsplash.com/@detait?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">detait</a> on <a href="https://unsplash.com/photos/a-view-of-a-mountain-with-a-valley-in-the-background-O9I5xlBMAwQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+<!--Create div for main image-->
+  <div class="img">
+    <div class="img-credit">
+      <p>
+        Photo by 
+        <a href="https://unsplash.com/@detait?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">detait</a> 
+        on 
+        <a href="https://unsplash.com/photos/a-view-of-a-mountain-with-a-valley-in-the-background-O9I5xlBMAwQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       </p>
-    </div>
+      </div>
   </div>
-
-<div class="intro">
-  <p>This is not a real online service! You know you need something
-    like this in your life to help you realize your deepest dreams.
-    Sign up <i>now</i> to get started.
-  </p>
-  <p>
-     You <i>know</i> you want to.
-  </p>
+<!--introduction to form-->
+  <div class="form">
+    <div class="form-intro">
+      <h1>
+        This is not a real online service! You know you need something
+        like this in your life to help you realize your deepest dreams.
+        <br><br>
+        Sign up <i>now</i> to get started.
+        <br><br>
+        You <i>know</i> you want to.
+      </h1>
+    </div>
+    <!--Form-->
+    <form action="">
+      <div class="inputs">
+        <div>
+          <label for="first_name">First Name:</label>
+          <input type="text" id="first_name" placeholder="First Name">
+        </div>
+        <br>
+        <div>
+          <label for="last_name">Last Name:</label>
+          <input type="text" id="last_name" placeholder="Last Name">
+        </div>  
+        <br>
+        <div>
+          <label for="user_email">Email:</label>
+          <input type="email" id="user_email" placeholder="Ex. @gmail.com">
+        </div>
+        <br>
+        <div>
+          <label for="phone">Phone:</label>
+          <input type="text" id="phone" placeholder="123-456-7890">
+        </div>
+        <br>
+        <div>
+          <label for="user_password">Password:</label>
+          <input type="password" id="user_password" placeholder="required" required>
+        </div>
+        <br>
+        <div>
+          <label for="confirm_password">Confirm Password:</label>
+          <input type="password" id="confirm_password" placeholder="confirm" required>
+        </div>
+        <br>
+        <div class="create">
+          <button class="btn" type="submit">Create Account</button>
+          <p>Already have an account? Log In</p>
+      </div>
+    </form>
   </div>
 </body>
-<form action="#" method="get">
-  <div>
-    <label for="first_name">First Name:</label>
-  </div>
-  <input type="text" id="first_name" placeholder="First Name">
-  <br>
-  <div>
-    <label for="last_name">Last Name:</label>
-  </div>
-  <input type="text" id="last_name" placeholder="Last Name">
-  <br>
-  <div>
-    <label for="user_email">Email:</label>
-  </div>
-  <input type="email" id="user_email" placeholder="Ex. @gmail.com">
-  <br>
-  <div>
-    <label for="phone">Phone:</label>
-  </div>
-  <input type="text" id="phone" placeholder="123-456-7890">
-  <div>
-    <label for="user_password">Password:</label>
-  </div>
-  <input type="password" id="user_password" placeholder="required" required>
-  <br>
-  <div>
-    <label for="confirm_password">Confirm Password:</label>
-  </div>
-  <input type="password" id="confirm_password" placeholder="confirm" required>
-</form>
-<br>
-  <button class="btn" type="submit">Create Account</button>
 </html>
